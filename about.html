@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Console Jam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- HTML CODE START HERE -->
+
+    <header id="myHeader">
+        <div class="logo">
+            <!-- <p>CONSOLE<span>JAM</span></p> -->
+            <img src="img/logo.png" alt="CONSOLE JAM">
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html" class="Active">ABOUT</a></li>
+            <li><a href="games.html">GAMES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <div class="heading">
+        <h1><span>A</span>bout</h1>
+    </div>
+
+    <section class="about">
+        <div class="about-photo">
+            <div class="about-image">
+                <img src="img/about-home.jpg" alt="PHOTO HERE">
+            </div>
+        </div>
+        <div class="about-text">
+            <h4>Console Jam</h4>
+            <h2>A Place where you find all Multiplayer games & their tournament.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, mollitia, saepe porro ea velit nostrum,
+                possimus assumenda voluptate laborum beatae eligendi? Quia odit recusandae architecto ipsum. Delectus
+                cupiditate quasi ex, iusto quae quos quibusdam et!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellendus odit recusandae ratione
+                distinctio est neque consequuntur facere. Consequuntur ipsa quos, obcaecati tempore corporis harum!</p>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video-content">
+        <video autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="video-text">
+          </div>
+        </div>
+    </section>
+
+    <div class="heading">
+        <h1><span>M</span>atches</h1>
+    </div>
+    <section class="match">
+        <div class="match-box">
+            <ion-icon name="logo-octocat"></ion-icon>
+            <p class="win">Four Angry Man <span>45</span></p>
+            <p>Future Station <span>30</span></p>
+            <h4>Live <span></span></h4>
+        </div>
+        <div class="match-box">
+            <ion-icon name="logo-npm"></ion-icon>
+            <p class="win">Alpha Extrme <span>55</span></p>
+            <p>Nova Eleven Max <span>40</span></p>
+            <h4>Live <span></span></h4>
+        </div>
+        <div class="match-box">
+            <ion-icon name="logo-sass"></ion-icon>
+            <p class="win">Universal Gamer <span>75</span></p>
+            <p>Ninja Gaming <span>50</span></p>
+            <h4>Live <span></span></h4>
+        </div>
+    </section>
+
+    <section class="discord">
+        <div class="discord-content">
+            <h4>Let's Play Together</h4>
+            <h2>Join Console Jam To Become Pro Gamer!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique libero magnam natus consequatur non
+                facilis optio quibusdam ducimus qui quos.</p>
+            <a href="https://discord.com/"  target="_blank" class="btn">JOIN DISCORD</a>
+        </div>
+        <div class="discord-photo">
+            <img src="img/discord-bg.png" alt="PHOTO HERE">
+        </div>
+    </section>
+
+    
+    <section class="subscribe">
+        <div class="sub-text">
+            <h1>GET LATEST NEWS IN YOUR INBOX FROM <span>CONSOLE JAM.</span></h1>
+            <a href="" class="btn-light">Subscribe Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-content">
+            <div class="foot-logo">
+                <div class="logo-foot">
+                    <img src="img/logo.png" alt="LOGO HERE">
+                </div>
+                <p>We will rock your world with the games.</p>
+                <div class="social">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+            <div class="links">
+                <div class="list-one">
+                    <h4>Site Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="list-two">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="">T&c Apply</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy;2021 <span>CONSOLE JAM.</span></p>
+            <p>All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <!-- HTML CODE ENDS HERE -->
+
+    <!-- JS START HERE -->
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- JS ENDS HERE -->
+</body>
+
+</html>

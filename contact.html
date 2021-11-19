@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Console Jam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- HTML CODE START HERE -->
+
+    <header id="myHeader">
+        <div class="logo">
+            <!-- <p>CONSOLE<span>JAM</span></p> -->
+            <img src="img/logo.png" alt="CONSOLE JAM">
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="games.html">GAMES</a></li>
+            <li><a href="contact.html" class="Active">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <div class="heading">
+        <h1><span>C</span>ontact Us</h1>
+    </div>
+    <section class="form">
+        <div class="form-box">
+            <h4>Get in touch</h4>
+            <div class="two">
+                <input type="text" name="" id="" placeholder="Name.." required>
+                <input type="email" name="" id="" placeholder="E-Mail.." required>
+            </div>
+            <div class="three">
+                <input type="text" name="" id="" placeholder="Subject..">
+            </div>
+            <div class="four">    
+                <textarea name="" id="" cols="30" rows="10" placeholder="Type Your Message Here.."></textarea>
+            </div>
+            <a href="index.html" class="btn">Send Message</a>
+        </div>
+        <div class="info-box">
+            <h1>Contact Us</h1>
+            <div class="info-content">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>Address: <span> D-block, Sanjay Place, Agra India, 282002</span></p>
+            </div>
+            <div class="info-content">
+                <ion-icon name="call-outline"></ion-icon>
+                <p>Phone: <span>  <a href="tel:+91 8171055323">+91 8171055323</a></span></p>
+            </div>
+            <div class="info-content">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>E-Mail: <span> <a href="mailto:contact@consolejam.com">contact@consolejam.com</a></span></p>
+            </div>
+            <div class="info-content">
+                <ion-icon name="logo-web-component"></ion-icon>
+                <p>Website: <span> <a href="">www.consolejam.com</a></span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="discord">
+        <div class="discord-content">
+            <h4>Let's Play Together</h4>
+            <h2>Join Console Jam To Become Pro Gamer!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique libero magnam natus consequatur non
+                facilis optio quibusdam ducimus qui quos.</p>
+            <a href="https://discord.com/"  target="_blank" class="btn">JOIN DISCORD</a>
+        </div>
+        <div class="discord-photo">
+            <img src="img/discord-bg.png" alt="PHOTO HERE">
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="sub-text">
+            <h1>GET LATEST NEWS IN YOUR INBOX FROM <span>CONSOLE JAM.</span></h1>
+            <a href="" class="btn-light">Subscribe Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-content">
+            <div class="foot-logo">
+                <div class="logo-foot">
+                    <img src="img/logo.png" alt="LOGO HERE">
+                </div>
+                <p>We will rock your world with the games.</p>
+                <div class="social">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+            <div class="links">
+                <div class="list-one">
+                    <h4>Site Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="list-two">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="">T&c Apply</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy;2021 <span>CONSOLE JAM.</span></p>
+            <p>All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <!-- HTML CODE ENDS HERE -->
+
+    <!-- JS START HERE -->
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- JS ENDS HERE -->
+</body>
+
+</html>
